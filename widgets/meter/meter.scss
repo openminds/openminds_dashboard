@@ -2,21 +2,26 @@
 // Sass declarations
 // ----------------------------------------------------------------------------
 $background-color:  #9c4274;
+$ok-color: rgb(77, 158, 69);
+$warning-color: orange;
+$danger-color: red;
 
 $title-color:       rgba(255, 255, 255, 0.7);
 $moreinfo-color:    rgba(255, 255, 255, 0.3);
 
 $meter-background:  darken($background-color, 15%);
+$meter-ok-background: darken($ok-color, 15%);
+$meter-warning-background: darken($warning-color, 15%);
+$meter-danger-background: darken($danger-color, 15%);
 
 // ----------------------------------------------------------------------------
 // Widget-meter styles
 // ----------------------------------------------------------------------------
 .widget-meter {
 
-  background-color: $background-color;
+  background-color: $ok-color;
 
   input.meter {
-    background-color: $meter-background;
     color: #fff;
   }
 
@@ -32,4 +37,16 @@ $meter-background:  darken($background-color, 15%);
     color: rgba(0, 0, 0, 0.3);
   }
 
+}
+.status-ok input.meter {
+  background-color: $meter-ok-background;
+  color: #fff;
+}
+
+.status-warning input.meter {
+  background-color: $meter-warning-background;
+}
+
+.status-danger input.meter {
+  background-color: $meter-danger-background;
 }

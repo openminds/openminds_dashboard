@@ -1,0 +1,9 @@
+applications:
+  - name: Sock
+    api_key: '1234langeAPIkey5678'
+    account_id: 1111
+    application_id: 123
+  - name: Bestel
+    api_key: '1234langeAPIkey5678'
+    account_id: 222
+    application_id: 321
